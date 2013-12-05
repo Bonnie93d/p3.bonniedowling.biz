@@ -19,6 +19,20 @@
         S&ampH Charged:<input type='text' id='chargedSH'><br><br>
         Actual S&ampH:<input type='text' id='actualSH'><br><br>
         
+        Are you a Power Seller? 
+        <select id='powerSeller'>
+        		<option value='0'></option>
+                <option value='1'>No</option>
+				<option value='2'>Yes</option>
+        </select>
+        
+                <br>
+        Listing Format:<br>
+        <select id='format'>
+        <option value='1'>Auction</option>
+        <option value='2'>Fixed (Buy it Now)</option>
+        <option value='3'>Store</option>
+        </select><br>
         
         Category:<br> 
         <select id='category'>
@@ -61,8 +75,9 @@
                 
         </select>
         
-        <br>
+       
         <form id=bus1>
+        <br>
         Select the Business & Industrial subcategory for your listing<br>
         <span id='bus'>
         <select>
@@ -70,46 +85,111 @@
 		<option value='2'>Restaurant & Catering - Concession Trailers & Carts <br>
         <option value='3'>Healthcare, Lab & Life Science - Imaging & Aesthetics Equipment<br>
         <option value='4'>Printing & Graphic Arts - Commercial Printing Presses<br>
-        <option value='5'>Other<br>
+        <option value='5'id='busOther'>Other Subcategory<br>
         </select>
         </span>
         </form>
         
+        <form id='camera1'>
+		<br>
+        Select the Cameras & Photo subcategory for your listing 
+        <select id='camera'>
+		<option value='6'> Binoculars & Telescopes</option>
+		<option value='6'> Camcorders</option>
+		<option value='9'> Camera & Photo Accessories</option>
+		<option value='6'> Digital Cameras</option>
+		<option value='6'> Digital Photo Frames</option>
+		<option value='6'> Film Photography</option>
+		<option value='6'> Flashes & Flash Accessories</option>
+		<option value='6'> Lenses & Filters</option>
+		<option value='6'> Lighting & Studio</option>
+		<option value='6'> Manuals & Guides</option>
+		<option value='9'> Other</option>
+		<option value='9'> Replacement Parts & Tools</option>
+		<option value='9'> Tripods & Supports</option>
+		<option value='6'> Video Production & Editing</option>
+		<option value='6'> Vintage Movie & Photography</option>
+		<option value='6'> Wholesale Lots</option>
+        </select></form>
+        
+        <form id=computer1>
         <br>
-        <form id=motors1>
-        Select the eBay Motors subcategory for your listing 
-        <span id='motors'>
-        <select>
+        Select the Computers/Tablets & Networking subcategory for your listing 
+        <select id='computer'>
+        <option value='9'> Cables & Connectors</option>
+		<option value='6'> Computer Components & Parts</option>
+		<option value='4'> Desktops & All-In-Ones</option>
+		<option value='6'> Drives, Storage & Blank Media</option>
+		<option value='6'> Enterprise Networking, Servers</option>
+		<option value='6'> Home Networking & Connectivity</option>
+		<option value='9'> iPad/Tablet/eBook Accessories</option>
+		<option value='4'> iPads, Tablets & eBook Readers</option>
+		<option value='9'> Keyboards, Mice & Pointing</option>
+		<option value='9'> Laptop & Desktop Accessories</option>
+		<option value='4'> Laptops & Netbooks</option>
+		<option value='6'> Manuals & Resources</option>
+		<option value='6'> Monitors, Projectors & Accs </option>
+		<option value='9'> Other</option>
+		<option value='9'> Power Protection, Distribution</option>
+		<option value='4'> Printers, Scanners & Supplies</option>
+		<option value='6'> Software</option>
+		<option value='6'> Vintage Computing</option>
+		<option value='6'> Wholesale Lots</option>
+        </select></form>
+        <br>
+        
+        
+        <form id='motors1'>
+        <br>
+        Select the eBay Motors subcategory for your listing: <br> 
+        <select id='motors'>
         <option value='1'> Cars & Trucks, RVs & Campers, and Commercial Trucks</option>
         <option value='2'> Motorcycles, Powersports, Trailers and Boats</option>
         <option value='3'> Powersports under 50cc</option>
-        <option value='4'>  All other vehicles</option>
+        <option value='4'> Other Subcategory</option>
         </select>
-        </span><br>
-        Type of Seller: <select>
+        <br>
+        
+        Type of Seller: <select id='motorsSeller'>
         <option value='1'>Low-Volume Seller</option>
-        <option value='21'>High-Volume Seller</option>
+        <option value='2'>High-Volume Seller</option>
         </select>
         </form>
         
+        
+        <form id='RE1'>
         <br>
-        <form id=RE1>
         Select the Real Estate subcategory for your listing<br>
-        <span id='RE'>
-        <select>
+        <select id='RE'>
         <option value='1'> Timeshare, Land and Manufactured Homes</option>
         <option value='2'> Residential, Commercial and Other Real Estate</option>
         </select>
-        </span>
+        <br>
+        Listing Duration
+        <select id=duration>
+        <option value ='7'>Less than 7 days</option>
+        <option value ='10'>10 days</option>
+        <option value ='30'>30 days</option>
+        </select>
         </form>
         
+        
+        <form id='vGames1'>
         <br>
-        Listing Format:<br>
-        <select id='format'>
-        <option value='1'>Auction</option>
-        <option value='2'>Fixed (Buy it Now)</option>
-        <option value='3'>Store</option>
-        </select>
+        Select the Video Games & Consoles subcategory for your listing 
+        <select id='vGames'>
+		<option value='9'> Other</option>
+		<option value='6'> Prepaid Gaming Cards </option>
+		<option value='9'> Replacement Parts & Tools</option>
+		<option value='6'> Strategy Guides & Cheats</option>
+		<option value='9'> Video Game Accessories</option>
+		<option value='4'> Video Game Consoles</option>
+		<option value='9'> Video Games</option>
+		<option value='6'> Video Gaming Merchandise</option>
+		<option value='6'> Wholesale Lots</option>
+        </select></form>
+        <br>
+        
 
         <br><br>
         Listing Details:<br>
@@ -120,17 +200,22 @@
         <span id='valuePack1'><input type='checkbox' id='valuePack'>Value Pack <br></span>
         <span id='bold1'><input type='checkbox' id='bold'>Bold<br></span>
         <span id='scheduleListings1'><input type='checkbox' id='scheduleListings'>Schedule Listings<br></span>
-        <span id='reservePrice1'><input type='checkbox' id='reservePrice'>Reserve Price <span id='rPrice1'>$<input type='text' id='rPrice'></span></span><br>
         <span id='international1'><input type='checkbox' id='international'>International Site Visibility<br></span>
-        <span id='day1'> <input type='checkbox' id='day'>10 day <br></span>
+        <span id='30day1'> <input type='checkbox' id='30day'>30 day <br></span>
+        <span id='reservePrice1'><input type='checkbox' id='reservePrice'>Reserve Price <span id='rPrice1'>$<input type='text' id='rPrice'><br></span></span>
+        <span id='day1'> <input type='checkbox' id='10day'>10 day <br>
+        <input type='checkbox' id='21day'>21 day <br>
+        </span>
         <span id='picture1'><input type='checkbox' id='picture'>Picture Pack<br></span>
         <span id='pictureSer1'><input type='checkbox' id='pictureSer'>Picture Services<br><span id='numPic1'># of Pictures (first 4 are free)<input type='text' id='numPic'></span></span><br>
 
         <br><br>
+        
                 
-        Insertion Total: $<span id='insertOut'></span><br>
-        Upgrade Total: $<span id='insertOut1'></span><br>
-        Total: $<span id='insertOut2'></span><br>
+        Insertion Total: $<span id='outInsert'></span><br>
+        Upgrades: $<span id='outUpgrades'></span><br>
+        Final: $<span id='outFinal'></span><br>
+        Total: $<span id='outTotal'></span><br>
 
         <script src="js/ebayCalc.js"></script>
 </body>  
